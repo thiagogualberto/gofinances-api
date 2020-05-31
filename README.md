@@ -19,7 +19,7 @@
 </br></br>
 
 <p id="insomniaButton" align="center">
-    <a href="https://insomnia.rest/run/?label=FastFeet%20API&uri=https%3A%2F%2Fraw.githubusercontent.com%2Fthiagogualberto%2Ffastfeet-api%2Fmaster%2FInsomnia_FastFeet.json" target="_blank"><img src="https://insomnia.rest/images/run.svg" alt="Run in Insomnia"></a>
+    <a href="https://insomnia.rest/run/?label=GoFinances%20API&uri=https%3A%2F%2Fraw.githubusercontent.com%2Fthiagogualberto%2Fgofinances-api%2Fmaster%2FInsomnia_GoFinances.json" target="_blank"><img src="https://insomnia.rest/images/run.svg" alt="Run in Insomnia"></a>
 </p>
 
 <p align="center">
@@ -72,7 +72,7 @@ $ yarn dev:server
 ```
 
 You can test this API in two ways:</br>
-* Import the `Insomnia_FastFeet.json` file into Insomnia or,
+* Import the `Insomnia_GoFinances.json` file into Insomnia or,
 * Click the button [Run in Insomnia](#insomniaButton)
 </br></br>
 
@@ -102,7 +102,7 @@ This project was developed with the following technologies:
 * [SuperTest](https://github.com/visionmedia/supertest) - Test
 * [TypeORM](https://typeorm.io/#/) - ORM used with Node.js + TypeScript
 * [TypeScript](https://www.typescriptlang.org/) - Build the server
-* [VS Code](https://code.visualstudio.com/) with [Sucrase](https://github.com/alangpierce/sucrase) + [ESLint](https://eslint.org/) + [Prettier](https://prettier.io/) + [EditorConfig](https://editorconfig.org/) + [TypeORM](https://typeorm.io/#/)
+* [VS Code](https://code.visualstudio.com/) with [ESLint](https://eslint.org/) + [Prettier](https://prettier.io/) + [EditorConfig](https://editorconfig.org/) + [TypeORM](https://typeorm.io/#/)
 </br></br>
 
 # :thinking: Contribution
