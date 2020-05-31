@@ -4,7 +4,7 @@
 
 <h3 align="center">
     <!-- Descrição do projeto  -->
-    Shipping company full control system - REST API made with Node.js
+    System to store financial transactions - REST API made with Node.js + Typescript
 </h3>
 
 </br>
@@ -35,7 +35,7 @@
 
 # :man_technologist: Project
 
-This project is a challenge of Rocketseat GoStack Bootcamp. It's a REST API built with NodeJS + Express. This API is a shipping company full control system.
+This project is a challenge of Rocketseat GoStack Bootcamp. It's a REST API built with NodeJS + Express + Typescript. This API is a system to store financial transactions.
 </br></br>
 
 # :rocket: Getting Started
@@ -46,14 +46,8 @@ To clone and run this api, you'll need Git, Node.js v12.14 or higher + Yarn v1.2
 The first thing you need to do is to run these three containers on your machine:</br>
 
 ```bash
-# Create a container in 'postgres' with the name of 'database'
-$ docker run --name database -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
-
-#Create a container in 'mongo' with the name of 'mongofastfeet'
-$ docker run --name mongofastfeet -p 27017:27017 -d -t mongo
-
-# Create a container in 'redis' with the name of 'redisfastfeet'
-$ docker run --name redisfastfeet -p 6379:6379 -d -t redis:alpine
+# Create a container in 'postgres' with the name of 'gostack_postgres'
+$ docker run --name gostack_postgres -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
 ```
 
 From your command line:
@@ -68,16 +62,13 @@ $ cd gofinances-api
 # Install the dependencies
 $ yarn
 
-# Create a database in 'postgres' with the name of 'fastfeet';
-
-# Make a copy of the .env.example file to .env and fill it with YOUR variables.
-$ cp .env.example .env
+# Create a database in 'postgres' with the name of 'gofinances';
 
 # Run the migrations
-$ yarn sequelize db:migrate
+$ yarn typeorm migration:run
 
 # Everything ready to start the server
-$ yarn dev
+$ yarn dev:server
 ```
 
 You can test this API in two ways:</br>
@@ -88,51 +79,30 @@ You can test this API in two ways:</br>
 # :clipboard: Features
 
 ## Funcionalities
-* User authentication with JWT
-* User registration (Create, Read, Update and Delete)
-* Sending files (User avatar)
-* Recipient Management
-  * Recipient registration (Create, Read, Update and Delete)
-* Deliveryman Management
-  * Deliveryman registration (Create, Read, Update and Delete)
-* Order Management
-  * Order registration (Create, Read, Update and Delete)
-  * Register order for deliveryman and recipient.
-  * Deliveryman can pick up only 5 orders a day, between 8am and 6pm.
-  * When the order is registered for a deliveryman, he receives a email with details of the order.
-  * Deliveryman can see your orders
-* Register delivery problems
-  * Register problems in order delivery.
-  * List all orders with delivery problems
-  * List all problems in order delivery
-  * Cancel delivery based on an issue. Every time a delivery is canceled, the deliveryman receives email notification.
+* Transactions (Create, List and Delete)
+* Create tags (Categories) when inserting new transactions.
+* Import transactions (CSV file).
+
 
 ## Build with (Technologies)
 
 This project was developed with the following technologies:
 * [Bcrypt](https://www.npmjs.com/package/bcrypt) - Generation of User Password Hash
-* [Bee Queue](https://github.com/bee-queue/bee-queue) - Redis-backed job queue for Node.js.
-* [date-fns](https://date-fns.org/) - JavaScript date utility library
+* [CSV Parser](https://www.npmjs.com/package/csv-parser) - Used to upload CSV files
 * [Docker](https://www.docker.com/docker-community) - Container
 * [DotEnv](https://www.npmjs.com/package/dotenv) - Loads environment variables
 * [EditorConfig](https://editorconfig.org/) - Setting up the development environment
 * [ESLint](https://eslint.org/) - JS Linter and code style
 * [Express](https://expressjs.com/pt-br/) - Router of the Application
-* [JWT](https://jwt.io/) - Authentication Json Web Token
-* [MongoDB](https://www.mongodb.com/) - Database
-* [Mongoose](https://mongoosejs.com/) - Object Modeling + DB Connector
+* [Jest](https://jestjs.io/) - JavaScript Testing Framework
 * [Multer](https://github.com/expressjs/multer) - File Upload
-* [Nodemailer](https://nodemailer.com/about/) - Used to send emails
-* [Nodemon](https://nodemon.io/) - Process Manager used in the development
 * [Node.js](https://nodejs.org/en/) - Build the server
 * [PostgreSQL](https://www.postgresql.org/) - Database
 * [Prettier](https://prettier.io/) - Code Formatter
-* [Redis](https://redis.io/) - Database
-* [Sequelize](https://sequelize.org/) - Promise-based Node.js ORM for Postgres
-* [Sucrase](https://github.com/alangpierce/sucrase) - Setting up the development environment
+* [SuperTest](https://github.com/visionmedia/supertest) - Test
+* [TypeORM](https://typeorm.io/#/) - ORM used with Node.js + TypeScript
+* [TypeScript](https://www.typescriptlang.org/) - Build the server
 * [VS Code](https://code.visualstudio.com/) with [Sucrase](https://github.com/alangpierce/sucrase) + [Nodemon](https://nodemon.io/) + [ESLint](https://eslint.org/) + [Prettier](https://prettier.io/) + [EditorConfig](https://editorconfig.org/) + [Sequelize](https://sequelize.org/)
-* [Youch](https://www.npmjs.com/package/youch) - Pretty error reporting for Node.js
-* [Yup](https://www.npmjs.com/package/yup) - Validate the application's JSON fields.
 </br></br>
 
 # :thinking: Contribution
