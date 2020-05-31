@@ -4,7 +4,7 @@
 
 <h3 align="center">
     <!-- Descrição do projeto  -->
-    System to store financial transactions - REST API made with Node.js + Typescript
+    Simple System to store financial transactions - REST API made with Node.js + Typescript
 </h3>
 
 </br>
@@ -35,7 +35,7 @@
 
 # :man_technologist: Project
 
-This project is a challenge of Rocketseat GoStack Bootcamp. It's a REST API built with NodeJS + Express + Typescript. This API is a system to store financial transactions.
+This project is a challenge of Rocketseat GoStack Bootcamp. It's a REST API built with NodeJS + Express + Typescript. This API is a simple system to store financial transactions.
 </br></br>
 
 # :rocket: Getting Started
@@ -62,7 +62,7 @@ $ cd gofinances-api
 # Install the dependencies
 $ yarn
 
-# Create a database in 'postgres' with the name of 'gofinances';
+# Create a database in 'postgres' with the name of 'gofinances'
 
 # Run the migrations
 $ yarn typeorm migration:run
@@ -102,7 +102,7 @@ This project was developed with the following technologies:
 * [SuperTest](https://github.com/visionmedia/supertest) - Test
 * [TypeORM](https://typeorm.io/#/) - ORM used with Node.js + TypeScript
 * [TypeScript](https://www.typescriptlang.org/) - Build the server
-* [VS Code](https://code.visualstudio.com/) with [Sucrase](https://github.com/alangpierce/sucrase) + [Nodemon](https://nodemon.io/) + [ESLint](https://eslint.org/) + [Prettier](https://prettier.io/) + [EditorConfig](https://editorconfig.org/) + [Sequelize](https://sequelize.org/)
+* [VS Code](https://code.visualstudio.com/) with [Sucrase](https://github.com/alangpierce/sucrase) + [ESLint](https://eslint.org/) + [Prettier](https://prettier.io/) + [EditorConfig](https://editorconfig.org/) + [TypeORM](https://typeorm.io/#/)
 </br></br>
 
 # :thinking: Contribution
